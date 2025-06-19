@@ -1,3 +1,3 @@
 print("Olá, mundo!!")
 
-print("Turma 48")
+print("Turma 48 ")

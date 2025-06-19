@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Feira de Livros</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Feira de Livros</h1>
+        </header>
+        <main>
+            <section id="home">
+                <p>Bem-vindo ao nosso app de feira de livros!</p>
+                <button onclick="abrirSecao('lista')">Ver livros</button>
+                <button onclick="abrirSecao('cadastro')">Cadastrar livro</button>
+            </section>
+
+            <section id="lista" class="hidden">
+                <h2>Livros Cadastrados</h2>
+                <ul id="livrosList"></ul>
+                <button onclick="abrirSecao('home')">Voltar</button>
+            </section>
+
+            <section id="cadastro" class="hidden">
+                <h2>Cadastrar Novo Livro</h2>
+                <input type="text" id="nomeLivro" placeholder="Nome do livro">
+                <input type="text" id="autorLivro" placeholder="Autor do livro">
+                <button onclick="adicionarLivro()">Salvar</button>
+                <button onclick="abrirSecao('home')">Voltar</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
